@@ -1,0 +1,111 @@
+/* Global Variables */
+
+:root {
+    --background-color: #d2f2fc;
+    --text-color: blanchedalmond;
+    --blue: #0b6480;
+    --gray: #5f6466;
+    --orange: #f7ca6f;
+    --turqoise: #86e3b8;
+    --red: #fa6969;
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+
+/* Begin Body Styling */
+
+body {
+    color: var(--gray);
+    background-color: var(--background-color);
+    font-family: Calibri Light;
+    font-weight: 150;
+}
+
+
+/* End Body Styling */
+
+
+/* Begin Header Styling */
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    z-index: 9999;
+    background-color: var(--blue);
+    color: white;
+    position: -webkit-sticky;
+    position: sticky;
+    padding: 30px 35px;
+    top: 0;
+    background-size: cover;
+    background-position: 85%;
+}
+
+header h1 {
+    font-weight: bold;
+    margin: 0;
+    font-size: 55px;
+    color: var(--text-color);
+}
+
+header a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 30px;
+}
+
+header nav {
+    margin: 10px 0;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style: none;
+    justify-content: space-between;
+}
+
+header nave ul li a {
+    padding: 15px 20px;
+    font-size: 1.55vw;
+}
+
+
+/* End Header Styling */
+
+
+/* Begin Hero Styling */
+
+
+/* End Hero Styling */
+
+
+/* Begin About-Me Styling */
+
+
+/* End About-Me Styling */
+
+
+/* Begin Work-Projects Styling */
+
+
+/* End Work-Projects Styling */
+
+
+/* Begin Contact-Me Styling */
+
+
+/* End Contact-Me Styling */
+
+
+/* Begin Footer Styling */
+
+
+/* End Footer Styling */
