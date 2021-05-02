@@ -8,6 +8,8 @@
     --orange: #f7ca6f;
     --turqoise: #86e3b8;
     --red: #fa6969;
+    --black: black;
+    --white: white;
 }
 
 * {
@@ -45,19 +47,22 @@ header {
     top: 0;
     background-size: cover;
     background-position: 85%;
+    background-image: url("../images/computer-screen-css.jpeg");
 }
 
 header h1 {
     font-weight: bold;
     margin: 0;
-    font-size: 55px;
-    color: var(--text-color);
+    font-size: 3.0vw;
+    color: var(--gray);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 header a {
     text-decoration: none;
     color: var(--text-color);
     font-size: 30px;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 
 header nav {
@@ -72,9 +77,20 @@ header nav ul {
     justify-content: space-between;
 }
 
-header nave ul li a {
+header nav ul li {
+    padding: 0 10px 0 10px;
+}
+
+header nav ul li a {
     padding: 15px 20px;
     font-size: 1.55vw;
+    text-shadow: 5 5 10px rgba(red, green, blue, alpha);
+}
+
+header nav ul li a:hover {
+    color: var(--blue);
+    background: #039470;
+    border-radius: 50%;
 }
 
 
