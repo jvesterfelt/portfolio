@@ -101,9 +101,11 @@
         
         .jumbotron h2 {
             display: block;
-            font-size: 42px;
+            font-size: 44px;
+            font-weight: 900;
             text-align: center;
             width: 100%;
+            text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
         }
         /* End Hero Styling */
         /* Begin Work-Projects Styling */
@@ -125,6 +127,10 @@
             font-size: 36px;
         }
         
+        .about-me p {
+            line-height: 2.0;
+        }
+        
         .main-content {
             width: 80%;
             float: right;
@@ -136,7 +142,13 @@
         .main-content div {
             width: 50%;
             display: flex;
+            flex-wrap: wrap;
             flex-direction: column;
+        }
+        
+        .main-content h3 {
+            display: block;
+            text-align: center;
         }
         
         .main-content img {
