@@ -37,7 +37,7 @@
             flex-wrap: wrap;
             justify-content: space-between;
             z-index: 9999;
-            background-color: var(--blue);
+            background-color: rgba(11, 100, 128, 0.5);
             color: white;
             position: -webkit-sticky;
             position: sticky;
@@ -125,10 +125,15 @@
         .about-me h3 {
             text-align: center;
             font-size: 36px;
+            text-shadow: 0 0 10px;
+            text-decoration: underline;
         }
         
         .about-me p {
             line-height: 2.0;
+            background-color: rgba(255, 255, 255, 0.5);
+            color: var(--black);
+            font-weight: 900;
         }
         
         .main-content {
@@ -154,6 +159,41 @@
         .main-content img {
             width: 300px;
             height: 125px;
+        }
+        
+        .html,
+        .javascript,
+        .api,
+        .node,
+        .oop,
+        .sql {
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+            padding: 10px;
+        }
+        
+        .html,
+        .javascript,
+        .api,
+        .node,
+        .oop,
+        .sql a {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            text-align: left;
+            font-size: 20px;
+        }
+        
+        .html,
+        .javascript,
+        .api,
+        .node,
+        .oop,
+        .sql img {
+            padding-top: 10px;
+            padding-bottom: 10px;
         }
         /* End Work-Projects Styling */
         /* Begin Contact-Me Styling */
@@ -233,7 +273,7 @@
             justify-content: center;
             flex-wrap: wrap;
             flex-direction: row;
-            background-color: var(--blue);
+            background-color: rgba(11, 100, 128, 0.5);
         }
         
         footer p {
