@@ -1,453 +1,466 @@
-                                    /* Global Variables */
-                                
-                                 :root {
-                                    --background-color: #d2f2fc;
-                                    --text-color: blanchedalmond;
-                                    --blue: #0b6480;
-                                    --gray: #5f6466;
-                                    --orange: #f7ca6f;
-                                    --turqoise: #86e3b8;
-                                    --red: #fa6969;
-                                    --black: black;
-                                    --white: white;
-                                }
-                                
-                                * {
-                                    margin: 0%;
-                                    padding: 0%;
-                                    box-sizing: border-box;
-                                }
-                                /* Begin Body Styling */
-                                
-                                body {
-                                    color: var(--gray);
-                                    background-color: var(--background-color);
-                                    font-family: Calibri Light;
-                                    font-weight: 150;
-                                }
-                                /* End Body Styling */
-                                /* Begin Header Styling */
-                                
-                                header {
-                                    display: flex;
-                                    flex-wrap: wrap;
-                                    justify-content: space-between;
-                                    z-index: 9999;
-                                    background-color: rgba(11, 100, 128, 0.5);
-                                    color: white;
-                                    position: -webkit-sticky;
-                                    position: sticky;
-                                    padding: 30px 35px;
-                                    top: 0;
-                                }
-                                
-                                header h1 {
-                                    font-weight: bold;
-                                    margin: 0;
-                                    font-size: 3.0vw;
-                                    color: var(--text-color);
-                                    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-                                }
-                                
-                                header a {
-                                    text-decoration: none;
-                                    color: var(--text-color);
-                                    font-size: 30px;
-                                    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-                                }
-                                
-                                header nav {
-                                    margin: 10px 0;
-                                }
-                                
-                                header nav ul {
-                                    display: flex;
-                                    flex-wrap: wrap;
-                                    align-items: center;
-                                    list-style: none;
-                                    justify-content: space-between;
-                                }
-                                
-                                header nav ul li {
-                                    padding: 0 10px 0 10px;
-                                }
-                                
-                                header nav ul li a {
-                                    padding: 15px 20px;
-                                    font-size: 1.55vw;
-                                    text-shadow: 5 5 10px rgba(red, green, blue, alpha);
-                                }
-                                
-                                header nav ul li a:hover {
-                                    color: var(--text-color);
-                                    background: rgba(3, 148, 112, 0.35);
-                                    border-radius: 50%;
-                                }
-                                /* End Header Styling */
-                                /* Begin Hero Styling */
-                                
-                                .jumbotron {
-                                    padding-top: 0px;
-                                    padding-bottom: 125px;
-                                    color: var(--gray);
-                                }
-                                
-                                .jumbotron h2 {
-                                    display: block;
-                                    font-size: 44px;
-                                    font-weight: 900;
-                                    text-align: center;
-                                    width: 100%;
-                                    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-                                }
-                                
-                                .jumbotron img {
-                                    width: 100%;
-                                    position: fixed;
-                                    z-index: -1;
-                                    opacity: .25;
-                                }
-                                
-                                .work-projects {
-                                    width: 100%;
-                                    display: flex;
-                                    flex-direction: row;
-                                }
-                                
-                                .about-me {
-                                    width: 30%;
-                                    float: left;
-                                    padding: 25px;
-                                    display: flex;
-                                    flex-direction: column;
-                                    align-items: center;
-                                    justify-content: center;
-                                }
-                                
-                                .about-me h3 {
-                                    text-align: center;
-                                    font-size: 36px;
-                                    text-shadow: 0 0 5px;
-                                    text-decoration: underline;
-                                }
-                                
-                                .about-me p {
-                                    line-height: 2.0;
-                                    color: var(--gray);
-                                    font-weight: 900;
-                                }
-                                
-                                .about-me img {
-                                    width: 150px;
-                                    height: 200px;
-                                    border: 2px solid var(--black);
-                                    box-shadow: 2px 2px 2px var(--blue);
-                                }
-                                
-                                .main-content {
-                                    width: 80%;
-                                    float: right;
-                                    display: flex;
-                                    flex-wrap: wrap;
-                                    flex-direction: row;
-                                }
-                                
-                                .main-content div {
-                                    width: 50%;
-                                    display: flex;
-                                    flex-wrap: wrap;
-                                    flex-direction: column;
-                                }
-                                
-                                .main-content h3 {
-                                    display: block;
-                                    text-align: center;
-                                }
-                                
-                                .main-content img {
-                                    width: 300px;
-                                    height: 125px;
-                                }
-                                
-                                .html,
-                                .javascript,
-                                .api,
-                                .node,
-                                .oop,
-                                .sql {
-                                    display: flex;
-                                    justify-content: space-around;
-                                    flex-direction: column;
-                                    padding: 10px;
-                                }
-                                
-                                .html h3,
-                                .javascript h3,
-                                .api h3,
-                                .node h3,
-                                .oop h3,
-                                .sql h3 {
-                                    font-size: 30px;
-                                    font-weight: 600;
-                                    color: var(--gray);
-                                }
-                                
-                                .html h3:hover,
-                                .javascript h3:hover,
-                                .api h3:hover,
-                                .node h3:hover,
-                                .oop h3:hover,
-                                .sql h3:hover {
-                                    font-size: 40px;
-                                }
-                                
-                                .html a,
-                                .javascript a,
-                                .api a,
-                                .node a,
-                                .oop a,
-                                .sql a {
-                                    display: flex;
-                                    justify-content: space-between;
-                                    flex-direction: column;
-                                    text-align: left;
-                                    font-size: 20px;
-                                    padding-bottom: 20px;
-                                    color: var(--gray);
-                                }
-                                
-                                .html a:hover,
-                                .javascript a:hover,
-                                .api a:hover,
-                                .node a:hover,
-                                .oop a:hover,
-                                .sql a:hover {
-                                    background: var(--blue);
-                                    color: var(--text-color);
-                                    display: flex;
-                                    align-items: center;
-                                    justify-content: center;
-                                }
-                                
-                                .html img,
-                                .javascript img,
-                                .api img,
-                                .node img,
-                                .oop img,
-                                .sql img {
-                                    margin-top: 10px;
-                                    border: 3px solid var(--blue);
-                                    box-shadow: 10px 5px 5px var(--blue);
-                                }
-                                
-                                .html img:hover,
-                                .javascript img:hover,
-                                .api img:hover,
-                                .node img:hover,
-                                .oop img:hover,
-                                .sql img:hover {
-                                    width: 80%;
-                                    height: 80%;
-                                }
-                                /* End Work-Projects Styling */
-                                /* Begin Contact-Me Styling */
-                                
-                                .contact-info>* {
-                                    flex: 1;
-                                    margin: 20px;
-                                }
-                                
-                                .contact {
-                                    width: 100%;
-                                    display: flex;
-                                    flex-wrap: wrap;
-                                    align-items: center;
-                                    margin: 0;
-                                }
-                                
-                                .contact-me {
-                                    width: 100%;
-                                    margin: 0;
-                                }
-                                
-                                .contact-me h3 {
-                                    font-size: 36px;
-                                    text-align: center;
-                                    text-decoration: underline;
-                                }
-                                
-                                .contact-info {
-                                    display: flex;
-                                    flex-wrap: wrap;
-                                    width: 100%;
-                                    justify-content: space-between;
-                                }
-                                
-                                .phone {
-                                    width: 50%;
-                                    display: flex;
-                                    flex-direction: column;
-                                    justify-content: space-around;
-                                    align-items: center;
-                                }
-                                
-                                .phone h4 {
-                                    padding: 10px;
-                                    font-size: 25px;
-                                }
-                                
-                                .email {
-                                    width: 50%;
-                                    display: flex;
-                                    flex-direction: column;
-                                    justify-content: space-around;
-                                    align-items: center;
-                                }
-                                
-                                .email h4 {
-                                    padding: 10px;
-                                    font-size: 25px;
-                                }
-                                /* End Contact-Me Styling */
-                                /* Begin Footer Styling */
-                                
-                                footer {
-                                    width: 100%;
-                                    padding-top: 35px;
-                                    padding-bottom: 35px;
-                                    display: flex;
-                                    justify-content: center;
-                                    flex-wrap: wrap;
-                                    flex-direction: row;
-                                    background-color: rgba(11, 100, 128, 0.5);
-                                }
-                                
-                                footer p {
-                                    text-align: right;
-                                    width: 20%;
-                                    display: flex;
-                                    justify-content: flex-start;
-                                    float: right;
-                                    flex-direction: column-reverse;
-                                    color: var(--text-color);
-                                    margin-bottom: 0;
-                                    margin-right: 0;
-                                }
-                                
-                                footer nav {
-                                    margin: 10px 0;
-                                    width: 50%;
-                                    float: left;
-                                    display: flex;
-                                    justify-content: flex-end;
-                                }
-                                
-                                footer nav ul {
-                                    display: flex;
-                                    flex-wrap: wrap;
-                                    align-items: center;
-                                    list-style: none;
-                                    justify-content: space-between;
-                                }
-                                
-                                footer nav ul li {
-                                    padding: 0 10px 0 10px;
-                                }
-                                
-                                footer nav ul li a {
-                                    padding: 15px 20px;
-                                    font-size: 1.55vw;
-                                    text-shadow: 5 5 10px rgba(255, 235, 205, 0.5);
-                                    color: var(--text-color);
-                                }
-                                
-                                footer nav ul li a:hover {
-                                    color: var(--text-color);
-                                    background: rgba(3, 148, 112, 0.35);
-                                    border-radius: 50%;
-                                }
-                                /* End Footer Styling */
-                                /* MEDIA QUERY FOR SMALLER VIEWPORTS */
-                                
-                                @media screen and (max-width: 980px) {
-                                    header {
-                                        padding-bottom: 0;
-                                        justify-content: center;
-                                        position: -webkit-sticky;
-                                        position: sticky;
-                                        top: 0;
-                                        background-attachment: relative;
-                                    }
-                                    header h1 {
-                                        text-align: center;
-                                        width: 100%;
-                                    }
-                                    header nav ul {
-                                        margin-top: 20px;
-                                        justify-content: center;
-                                        width: 100%;
-                                    }
-                                    .work-projects {
-                                        width: 100%;
-                                        display: block;
-                                    }
-                                    footer h2,
-                                    footer div {
-                                        text-align: center;
-                                        width: 100%;
-                                    }
-                                    .about-me {
-                                        width: 100%;
-                                        padding: 10px;
-                                        display: flex;
-                                        flex-direction: column;
-                                        align-items: center;
-                                        justify-content: space-around;
-                                    }
-                                    .about-me h3 {
-                                        font-size: 28px;
-                                    }
-                                    .about-me img {
-                                        display: flex;
-                                    }
-                                    .about-me-text {
-                                        display: block;
-                                        text-align: center;
-                                        line-height: 1.25;
-                                        width: 100%;
-                                        float: top;
-                                        flex-wrap: wrap;
-                                        width: 50%;
-                                    }
-                                    .main-content {
-                                        width: 100%;
-                                        display: flex;
-                                        flex-wrap: nowrap;
-                                        flex-direction: column;
-                                        align-items: center;
-                                        justify-content: space-around;
-                                    }
-                                    .html,
-                                    .javascript,
-                                    .api,
-                                    .node,
-                                    .oop,
-                                    .sql {
-                                        width: 100%;
-                                        display: flex;
-                                        flex-wrap: nowrap;
-                                        flex-direction: column;
-                                        align-items: center;
-                                        justify-content: center;
-                                    }
-                                    .html a,
-                                    .javascript a,
-                                    .api a,
-                                    .node a,
-                                    .oop a,
-                                    .sql a {
-                                        display: flex;
-                                        flex-direction: column;
-                                        align-items: center;
-                                        justify-content: center;
-                                    }
+                                                /* Global Variables */
+                                            
+                                             :root {
+                                                --background-color: #d2f2fc;
+                                                --text-color: blanchedalmond;
+                                                --blue: #0b6480;
+                                                --gray: #5f6466;
+                                                --orange: #f7ca6f;
+                                                --turqoise: #86e3b8;
+                                                --red: #fa6969;
+                                                --black: black;
+                                                --white: white;
+                                            }
+                                            
+                                            * {
+                                                margin: 0%;
+                                                padding: 0%;
+                                                box-sizing: border-box;
+                                            }
+                                            /* Begin Body Styling */
+                                            
+                                            body {
+                                                color: var(--gray);
+                                                background-color: var(--background-color);
+                                                font-family: Calibri Light;
+                                                font-weight: 150;
+                                            }
+                                            /* End Body Styling */
+                                            /* Begin Header Styling */
+                                            
+                                            header {
+                                                display: flex;
+                                                flex-wrap: wrap;
+                                                justify-content: space-between;
+                                                z-index: 9999;
+                                                background-color: rgba(11, 100, 128, 0.5);
+                                                color: white;
+                                                position: -webkit-sticky;
+                                                position: sticky;
+                                                padding: 30px 35px;
+                                                top: 0;
+                                            }
+                                            
+                                            header h1 {
+                                                font-weight: bold;
+                                                margin: 0;
+                                                font-size: 3.0vw;
+                                                color: var(--text-color);
+                                                text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+                                            }
+                                            
+                                            header a {
+                                                text-decoration: none;
+                                                color: var(--text-color);
+                                                font-size: 30px;
+                                                text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+                                            }
+                                            
+                                            header nav {
+                                                margin: 10px 0;
+                                            }
+                                            
+                                            header nav ul {
+                                                display: flex;
+                                                flex-wrap: wrap;
+                                                align-items: center;
+                                                list-style: none;
+                                                justify-content: space-between;
+                                            }
+                                            
+                                            header nav ul li {
+                                                padding: 0 10px 0 10px;
+                                            }
+                                            
+                                            header nav ul li a {
+                                                padding: 15px 20px;
+                                                font-size: 1.55vw;
+                                                text-shadow: 5 5 10px rgba(red, green, blue, alpha);
+                                            }
+                                            
+                                            header nav ul li a:hover {
+                                                color: var(--text-color);
+                                                background: rgba(3, 148, 112, 0.35);
+                                                border-radius: 50%;
+                                            }
+                                            /* End Header Styling */
+                                            /* Begin Hero Styling */
+                                            
+                                            .jumbotron {
+                                                padding-top: 0px;
+                                                padding-bottom: 125px;
+                                                color: var(--gray);
+                                            }
+                                            
+                                            .jumbotron h2 {
+                                                display: block;
+                                                font-size: 44px;
+                                                font-weight: 900;
+                                                text-align: center;
+                                                width: 100%;
+                                                text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+                                            }
+                                            
+                                            .jumbotron img {
+                                                width: 100%;
+                                                position: fixed;
+                                                z-index: -1;
+                                                opacity: .25;
+                                            }
+                                            
+                                            .work-projects {
+                                                width: 100%;
+                                                display: flex;
+                                                flex-direction: row;
+                                            }
+                                            
+                                            .about-me {
+                                                width: 30%;
+                                                float: left;
+                                                padding: 25px;
+                                                display: flex;
+                                                flex-direction: column;
+                                                align-items: center;
+                                                justify-content: center;
+                                            }
+                                            
+                                            .about-me h3 {
+                                                text-align: center;
+                                                font-size: 36px;
+                                                text-shadow: 0 0 5px;
+                                                text-decoration: underline;
+                                            }
+                                            
+                                            .about-me p {
+                                                line-height: 2.0;
+                                                color: var(--gray);
+                                                font-weight: 900;
+                                            }
+                                            
+                                            .about-me img {
+                                                width: 150px;
+                                                height: 200px;
+                                                border: 2px solid var(--black);
+                                                box-shadow: 2px 2px 2px var(--blue);
+                                            }
+                                            
+                                            .main-content {
+                                                width: 80%;
+                                                float: right;
+                                                display: flex;
+                                                flex-wrap: wrap;
+                                                flex-direction: row;
+                                            }
+                                            
+                                            .main-content div {
+                                                width: 50%;
+                                                display: flex;
+                                                flex-wrap: wrap;
+                                                flex-direction: column;
+                                            }
+                                            
+                                            .main-content h3 {
+                                                display: block;
+                                                text-align: center;
+                                            }
+                                            
+                                            .main-content img {
+                                                width: 300px;
+                                                height: 125px;
+                                            }
+                                            
+                                            .html,
+                                            .javascript,
+                                            .api,
+                                            .node,
+                                            .oop,
+                                            .sql {
+                                                display: flex;
+                                                justify-content: space-around;
+                                                flex-direction: column;
+                                                padding: 10px;
+                                            }
+                                            
+                                            .html h3,
+                                            .javascript h3,
+                                            .api h3,
+                                            .node h3,
+                                            .oop h3,
+                                            .sql h3 {
+                                                font-size: 30px;
+                                                font-weight: 600;
+                                                color: var(--gray);
+                                            }
+                                            
+                                            .html h3:hover,
+                                            .javascript h3:hover,
+                                            .api h3:hover,
+                                            .node h3:hover,
+                                            .oop h3:hover,
+                                            .sql h3:hover {
+                                                font-size: 40px;
+                                            }
+                                            
+                                            .html a,
+                                            .javascript a,
+                                            .api a,
+                                            .node a,
+                                            .oop a,
+                                            .sql a {
+                                                display: flex;
+                                                justify-content: space-between;
+                                                flex-direction: column;
+                                                text-align: left;
+                                                font-size: 20px;
+                                                padding-bottom: 20px;
+                                                color: var(--gray);
+                                            }
+                                            
+                                            .html a:hover,
+                                            .javascript a:hover,
+                                            .api a:hover,
+                                            .node a:hover,
+                                            .oop a:hover,
+                                            .sql a:hover {
+                                                background: var(--blue);
+                                                color: var(--text-color);
+                                                display: flex;
+                                                align-items: center;
+                                                justify-content: center;
+                                            }
+                                            
+                                            .html img,
+                                            .javascript img,
+                                            .api img,
+                                            .node img,
+                                            .oop img,
+                                            .sql img {
+                                                margin-top: 10px;
+                                                border: 3px solid var(--blue);
+                                                box-shadow: 10px 5px 5px var(--blue);
+                                            }
+                                            
+                                            .html img:hover,
+                                            .javascript img:hover,
+                                            .api img:hover,
+                                            .node img:hover,
+                                            .oop img:hover,
+                                            .sql img:hover {
+                                                width: 80%;
+                                                height: 80%;
+                                            }
+                                            /* End Work-Projects Styling */
+                                            /* Begin Contact-Me Styling */
+                                            
+                                            .contact-info>* {
+                                                flex: 1;
+                                                margin: 20px;
+                                            }
+                                            
+                                            .contact {
+                                                width: 100%;
+                                                display: flex;
+                                                flex-wrap: wrap;
+                                                align-items: center;
+                                                margin: 0;
+                                            }
+                                            
+                                            .contact-me {
+                                                width: 100%;
+                                                margin: 0;
+                                            }
+                                            
+                                            .contact-me h3 {
+                                                font-size: 36px;
+                                                text-align: center;
+                                                text-decoration: underline;
+                                            }
+                                            
+                                            .contact-info {
+                                                display: flex;
+                                                flex-wrap: wrap;
+                                                width: 100%;
+                                                justify-content: space-between;
+                                            }
+                                            
+                                            .phone {
+                                                width: 50%;
+                                                display: flex;
+                                                flex-direction: column;
+                                                justify-content: space-around;
+                                                align-items: center;
+                                            }
+                                            
+                                            .phone h4 {
+                                                padding: 10px;
+                                                font-size: 25px;
+                                            }
+                                            
+                                            .email {
+                                                width: 50%;
+                                                display: flex;
+                                                flex-direction: column;
+                                                justify-content: space-around;
+                                                align-items: center;
+                                            }
+                                            
+                                            .email h4 {
+                                                padding: 10px;
+                                                font-size: 25px;
+                                            }
+                                            
+                                            .linkedIn {
+                                                width: 50%;
+                                                display: flex;
+                                                flex-direction: column;
+                                                justify-content: space-around;
+                                                align-items: center;
+                                            }
+                                            
+                                            .linkedIn h4 {
+                                                padding: 10px;
+                                                font-size: 25px;
+                                            }
+                                            /* End Contact-Me Styling */
+                                            /* Begin Footer Styling */
+                                            
+                                            footer {
+                                                width: 100%;
+                                                padding-top: 35px;
+                                                padding-bottom: 35px;
+                                                display: flex;
+                                                justify-content: center;
+                                                flex-wrap: wrap;
+                                                flex-direction: row;
+                                                background-color: rgba(11, 100, 128, 0.5);
+                                            }
+                                            
+                                            footer p {
+                                                text-align: right;
+                                                width: 20%;
+                                                display: flex;
+                                                justify-content: flex-start;
+                                                float: right;
+                                                flex-direction: column-reverse;
+                                                color: var(--text-color);
+                                                margin-bottom: 0;
+                                                margin-right: 0;
+                                            }
+                                            
+                                            footer nav {
+                                                margin: 10px 0;
+                                                width: 50%;
+                                                float: left;
+                                                display: flex;
+                                                justify-content: flex-end;
+                                            }
+                                            
+                                            footer nav ul {
+                                                display: flex;
+                                                flex-wrap: wrap;
+                                                align-items: center;
+                                                list-style: none;
+                                                justify-content: space-between;
+                                            }
+                                            
+                                            footer nav ul li {
+                                                padding: 0 10px 0 10px;
+                                            }
+                                            
+                                            footer nav ul li a {
+                                                padding: 15px 20px;
+                                                font-size: 1.55vw;
+                                                text-shadow: 5 5 10px rgba(255, 235, 205, 0.5);
+                                                color: var(--text-color);
+                                            }
+                                            
+                                            footer nav ul li a:hover {
+                                                color: var(--text-color);
+                                                background: rgba(3, 148, 112, 0.35);
+                                                border-radius: 50%;
+                                            }
+                                            /* End Footer Styling */
+                                            /* MEDIA QUERY FOR SMALLER VIEWPORTS */
+                                            
+                                            @media screen and (max-width: 980px) {
+                                                header {
+                                                    padding-bottom: 0;
+                                                    justify-content: center;
+                                                    position: -webkit-sticky;
+                                                    position: sticky;
+                                                    top: 0;
+                                                    background-attachment: relative;
+                                                }
+                                                header h1 {
+                                                    text-align: center;
+                                                    width: 100%;
+                                                }
+                                                header nav ul {
+                                                    margin-top: 20px;
+                                                    justify-content: center;
+                                                    width: 100%;
+                                                }
+                                                .work-projects {
+                                                    width: 100%;
+                                                    display: block;
+                                                }
+                                                footer h2,
+                                                footer div {
+                                                    text-align: center;
+                                                    width: 100%;
+                                                }
+                                                .about-me {
+                                                    width: 100%;
+                                                    padding: 10px;
+                                                    display: flex;
+                                                    flex-direction: column;
+                                                    align-items: center;
+                                                    justify-content: space-around;
+                                                }
+                                                .about-me h3 {
+                                                    font-size: 28px;
+                                                }
+                                                .about-me img {
+                                                    display: flex;
+                                                }
+                                                .about-me-text {
+                                                    display: block;
+                                                    text-align: center;
+                                                    line-height: 1.25;
+                                                    width: 100%;
+                                                    float: top;
+                                                    flex-wrap: wrap;
+                                                    width: 50%;
+                                                }
+                                                .main-content {
+                                                    width: 100%;
+                                                    display: flex;
+                                                    flex-wrap: nowrap;
+                                                    flex-direction: column;
+                                                    align-items: center;
+                                                    justify-content: space-around;
+                                                }
+                                                .html,
+                                                .javascript,
+                                                .api,
+                                                .node,
+                                                .oop,
+                                                .sql {
+                                                    width: 100%;
+                                                    display: flex;
+                                                    flex-wrap: nowrap;
+                                                    flex-direction: column;
+                                                    align-items: center;
+                                                    justify-content: center;
+                                                }
+                                                .html a,
+                                                .javascript a,
+                                                .api a,
+                                                .node a,
+                                                .oop a,
+                                                .sql a {
+                                                    display: flex;
+                                                    flex-direction: column;
+                                                    align-items: center;
+                                                    justify-content: center;
+                                                }
