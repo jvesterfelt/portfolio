@@ -1,4 +1,4 @@
-                                /* Global Variables */
+                                    /* Global Variables */
                                 
                                  :root {
                                     --background-color: #d2f2fc;
@@ -399,10 +399,10 @@
                                     .about-me {
                                         width: 100%;
                                         padding: 10px;
-                                        display: block;
+                                        display: flex;
                                         flex-direction: column;
                                         align-items: center;
-                                        justify-content: center;
+                                        justify-content: space-around;
                                     }
                                     .about-me h3 {
                                         font-size: 28px;
@@ -424,5 +424,30 @@
                                         display: flex;
                                         flex-wrap: nowrap;
                                         flex-direction: column;
+                                        align-items: center;
+                                        justify-content: space-around;
                                     }
-                                }
+                                    .html,
+                                    .javascript,
+                                    .api,
+                                    .node,
+                                    .oop,
+                                    .sql {
+                                        width: 100%;
+                                        display: flex;
+                                        flex-wrap: nowrap;
+                                        flex-direction: column;
+                                        align-items: center;
+                                        justify-content: center;
+                                    }
+                                    .html a,
+                                    .javascript a,
+                                    .api a,
+                                    .node a,
+                                    .oop a,
+                                    .sql a {
+                                        display: flex;
+                                        flex-direction: column;
+                                        align-items: center;
+                                        justify-content: center;
+                                    }
