@@ -255,6 +255,16 @@
                                                     width: 550px;
                                                     height: 275px;
                                                 }
+
+                                                #third-project a {
+                                                    width: 600px;
+                                                    height: 400px;
+                                                }
+                                                
+                                                #third-project img {
+                                                    width: 550px;
+                                                    height: 275px;
+                                                }
                                                 /* End Work-Projects Styling */
                                                 /* Begin Contact-Me Styling */
                                                 
